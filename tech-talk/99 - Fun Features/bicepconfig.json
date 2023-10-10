@@ -1,0 +1,41 @@
+{
+  // See https://aka.ms/bicep/config for more information on Bicep configuration options
+  // Press CTRL+SPACE/CMD+SPACE at any location to see Intellisense suggestions
+  "analyzers": {
+    "core": {
+      "rules": {
+        "no-unused-params": {
+          "level": "warning"
+        }
+      }
+    }
+  },
+  "experimentalFeaturesEnabled": {
+    "testFramework": true,
+    "asserts": true,
+    "assertions": true,
+    "userDefinedFunctions": true,
+    "userDefinedTypes": true
+  },
+  "moduleAliases": {
+    "br": {
+      "JustAi": {
+        "registry": "https://azure.github.io/bicep-registry-modules",
+        "modulePath": "ai"
+      }
+    },
+    "ts": {
+      
+    }
+  },
+  "cloud": {
+    "credentialPrecedence": [
+      "AzurePowerShell",
+      "Environment",
+      "VisualStudioCode",
+      "AzureCLI",
+      "VisualStudio",
+      "ManagedIdentity"
+    ]  
+  }
+}
